@@ -5,8 +5,9 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.send('Welcome to the Node.js assignment!');
+// this connects the Node.js code to the html file
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/A3Q1.html'));
 });
 
 // A) Function: findSummation
