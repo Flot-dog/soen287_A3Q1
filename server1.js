@@ -75,5 +75,5 @@ app.get('/find4Digits', (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log("Server listening on port 5331");
+    console.log("Server listening on port 3000");
 });
