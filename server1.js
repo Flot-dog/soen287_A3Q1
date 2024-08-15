@@ -6,11 +6,11 @@ const path = require('path');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files (JavaScript, CSS, images) from the "public" folder
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve the HTML file when the root route is accessed
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'A3Q1.html'));
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/A3Q1.html'));
 });
 
 // A) Function: findSummation
